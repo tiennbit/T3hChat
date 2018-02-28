@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BBFFEB3B"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_104sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar_register"
+                android:layout_width="@dimen/_104sdp"
+                android:layout_height="@dimen/_104sdp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_avatar" />
+
+            <ImageView
+                android:id="@+id/btn_choose_picture"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_add_picture" />
+
+            <ImageView
+                android:id="@+id/btn_take_picture"
+                android:layout_marginRight="@dimen/_48sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_camera" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/custom_edittext_top"
+            android:drawableLeft="@mipmap/ic_account"
+            android:hint="Username"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@mipmap/ic_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_bottom"
+            android:drawableLeft="@mipmap/ic_password"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/custom_button_one"
+            android:text="Register"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</RelativeLayout>
